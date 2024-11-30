@@ -1,7 +1,7 @@
 <?php
 try {
     require_once '../data/connect.php';
-    $flowersPerPage = 5;
+    $flowersPerPage = 6;
 
     // Xác định trang hiện tại
     $page = isset($_GET['page']) ? (int) $_GET['page'] : 1;

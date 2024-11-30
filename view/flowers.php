@@ -53,6 +53,7 @@ require_once '../controller/pagination.php';
                         </div>
                     </div>
                 <?php endforeach; ?>
+                <div></div>
                 <div class="row">
                     <div class="col-md-12">
                         <nav aria-label="Page navigation example">
@@ -125,9 +126,9 @@ require_once '../controller/pagination.php';
                     <div class="card-header bg-white py-3">
                         <div class="d-flex justify-content-between align-items-center">
                             <h4 class="mb-0">Quản lý danh sách hoa</h4>
-                            <button class="btn btn-success">
+                            <a class="btn btn-success" href="create_flower.php">
                                 <i class="bi bi-plus-lg me-2"></i>Thêm hoa mới
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -153,10 +154,10 @@ require_once '../controller/pagination.php';
                                             <td><?php echo $flower['description']; ?></td>
                                             <td class="text-center">
                                                 <div class="btn-group" role="group">
-                                                    <a href="edit.php?id=<?php echo $flower['id']; ?>" class="btn btn-sm btn-primary">
+                                                    <a href="edit_flower.php?id=<?php echo $flower['id']; ?>" class="btn btn-sm btn-primary">
                                                         <i class="bi bi-pencil-square"></i>
                                                     </a>
-                                                    <a href="delete.php?id=<?php echo $flower['id']; ?>" class="btn btn-sm btn-danger"
+                                                    <a href="../controller/delete.php?id=<?php echo $flower['id']; ?>" class="btn btn-sm btn-danger"
                                                         onclick="return confirm('Bạn có chắc chắn muốn xóa hoa này?')">
                                                         <i class="bi bi-trash"></i>
                                                     </a>
